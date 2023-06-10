@@ -1,0 +1,54 @@
+<!-- armor_skills_table.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #7a0505;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+<h2>Weapons</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Weapon ID</th>
+      <th>Weapon Name</th>
+      <th>Sharpness</th>
+      <th>Affinity</th>
+      <th>Weapon Type</th>
+      <th>Upgrade</th>
+      <th>Element</th>
+      <th>Deco Slots</th>
+      <th>Materials</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for weapon in weapons %}
+      <tr>
+        <td>{{ weapon[0] }}</td>
+        <td>{{ weapon[1] }}</td>
+        <td>{{ weapon[2] }}</td>
+        <td>{{ weapon[3] }}</td>
+        <td>{{ weapon[4] }}</td>
+        <td>{{ weapon[5] }}</td>
+        <td>{{ weapon[6] }}</td>
+        <td>{{ weapon[7] }}</td>
+        <td>{{ weapon[8] }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

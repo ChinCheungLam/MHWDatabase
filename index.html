@@ -1,0 +1,112 @@
+<!-- armor_skills_table.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #7a0505;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Monster Hunter World Database</title>
+    <style>
+      body {
+        background-image: url('https://gameranx.com/wp-content/uploads/2019/10/Monster-Hunter-World-Iceborne-expansion-4K-Wallpaper.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h1 {
+        font-size: 100px;
+        text-align: center;
+        color: purple;
+        margin-top: 30vh; /* Adjust the value to position the title vertically */
+      }
+      nav {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 150px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 100px;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .content {
+        margin-left: 220px;
+      }
+      .welcome {
+        margin-top: 100px; /* Adjust the value to control the spacing between the title and the welcome text */
+        color: black;
+        background-color: rgba(255, 255, 255, 0.6); /* Add a semi-transparent white background */
+        padding: 20px; /* Add some padding around the text */
+        border-radius: 100px; /* Add rounded corners to the background */
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Quests</a>
+      <a href="#">Monsters</a>
+      <a href="#">Armor</a>
+      <a href="#">Weapons</a>
+      <a href="#">Hunters</a>
+      <a href="#">Equipment</a>
+      <a href="#">Armor Skills</a>
+    </nav>
+    <div class="content">
+      <h1>Monster Hunter World Database</h1>
+      <!-- Add the welcome message here -->
+      <div class="welcome">
+        <h2>Welcome to the Monster Hunter World Database!</h2>
+        <p>
+          Monster Hunter World is an action-packed, role-playing game developed and published by Capcom. Set in a breathtaking open-world environment teeming with colossal monsters, this immersive game challenges players to embark on thrilling quests, hone their skills, and collaborate with fellow hunters.
+        </p>
+        <p>
+          We're delighted to have you here on our website, where you'll find a comprehensive database brimming with information about quests, monsters, armor, weapons, hunters, equipment, and armor skills. Whether you're a seasoned hunter or just starting your journey, our goal is to provide you with the resources and insights needed to conquer the world of Monster Hunter.
+        </p>
+      </div>
+       <!-- Include the quests_table.html file -->
+      {% include 'quests_table.html' %}
+      {% include 'monsters_table.html' %}
+      {% include 'armor_table.html' %}
+      {% include 'weapons_table.html' %}
+      {% include 'hunters_table.html' %}
+      {% include 'equipment_table.html' %}
+      {% include 'armor_skills_table.html' %}
+     </div>
+   </body>
+ </html>

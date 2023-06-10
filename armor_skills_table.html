@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #7a0505;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+<h2>Armor Skills</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Armor Skill ID</th>
+      <th>Armor Skill Name</th>
+      <th>Armor Skill Max Level</th>
+      <th>Armor Skill Availabilities</th>
+      <th>Armor ID</th>
+      <th>Armor Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for armor_skill in armor_skills %}
+      <tr>
+        <td>{{ armor_skill[0] }}</td>
+        <td>{{ armor_skill[1] }}</td>
+        <td>{{ armor_skill[2] }}</td>
+        <td>{{ armor_skill[3] }}</td>
+        <td>{{ armor_skill[4] }}</td>
+        <td>{{ armor_skill[5] }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

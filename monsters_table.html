@@ -1,0 +1,52 @@
+<!-- armor_skills_table.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #7a0505;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+<h2>Monsters</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Monster ID</th>
+      <th>Monster Name</th>
+      <th>Monster size</th>
+      <th>Weakness</th>
+      <th>Monster Type</th>
+      <th>Threat Level</th>
+      <th>Quest ID</th>
+      <th>Quest Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for monster in monsters %}
+      <tr>
+        <td>{{ monster[0] }}</td>
+        <td>{{ monster[1] }}</td>
+        <td>{{ monster[2] }}</td>
+        <td>{{ monster[3] }}</td>
+        <td>{{ monster[4] }}</td>
+        <td>{{ monster[5] }}</td>
+        <td>{{ monster[6] }}</td>
+        <td>{{ monster[7] }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

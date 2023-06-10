@@ -1,0 +1,44 @@
+<!-- armor_skills_table.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #7a0505;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+<h2>Quests</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Quest ID</th>
+      <th>Quest Name</th>
+      <th>Rewards</th>
+      <th>Quest Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for quest in quests %}
+      <tr>
+        <td>{{ quest[0] }}</td>
+        <td>{{ quest[1] }}</td>
+        <td>{{ quest[2] }}</td>
+        <td>{{ quest[3] }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
