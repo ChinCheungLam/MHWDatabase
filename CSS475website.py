@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 # Define MySQL database connection
 MHW_DB = mysql.connector.connect(
-  host="css475databaseproject.c6re2to5cmf5.us-east-2.rds.amazonaws.com",
-  user="teamZinogre",
-  password="teamZinogre_lol",
-  database="MHW_DB"
+  host="",
+  user="",
+  password="",
+  database=""
 )
 
 # Define a route to fetch data from the database and display it
